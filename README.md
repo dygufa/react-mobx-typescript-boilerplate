@@ -9,7 +9,7 @@ In order to run webpack-dev-server on port 6090 you need to execute: `npm run de
 
 ## TODO:
 - [x] Implement sass
-- [ ] Add router store
+- [x] Add router store
 - [ ] Convert this basic timer into a pomodoro timer
 - [ ] Make webpack more efficient by separing the app's code from the vendors' code.
 - [ ] Implement at least one model to be used as example (probably a thing to store the pomodoro thing historic)
