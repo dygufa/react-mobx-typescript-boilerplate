@@ -53,7 +53,7 @@ module.exports = {
                         loader: "sass",
                         query: {
                             includePaths: [
-                                "./src/styles"
+                                "./src"
                             ]
                         }
                     }
