@@ -7,7 +7,7 @@ import * as React from "react";
 const s = require("./style.scss");
 
 interface IButtonProps {
-    onClick: () => any;
+    onClick: () => void;
 };
 
 interface IButtonState {};

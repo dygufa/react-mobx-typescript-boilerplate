@@ -1,4 +1,12 @@
 import * as React from "react";
+import { Route } from "react-router";
+
+/**
+ * Containers
+ */
+
+import TimerView from "../TimerView";
+import PrintNumber from "../PrintNumber"
 
 /** 
  * Style
@@ -6,19 +14,12 @@ import * as React from "react";
 
 const s = require("./style.scss");
 
-export default class App extends React.Component<any, any> {
-    renderDevTool() {
-        if (process.env.NODE_ENV !== 'production') {
-            const DevTools = require('mobx-react-devtools').default;
-            return (<DevTools />);
-        }
-    };
-
+export default class App extends React.Component<{}, {}> {
     render() {
         return (
             <div className="container">
-                {this.props.children}
-                {this.renderDevTool()}
+                <Route exact path="/" component={TimerView} />
+                <Route path="/numero/:number" component={PrintNumber} />
             </div>
         );
     }
